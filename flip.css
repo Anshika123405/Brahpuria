@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body{
+    background: linear-gradient(90deg , rgb(128, 128, 178), rgb(135, 63, 76));
+}
+.circle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 0px 12px 0px 12px;
+    background-color: #2e9254;
+    animation-name: circle;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+/* animation-timing-function: reverse; */
+
+
+}
+.circles{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 0px 12px 0px 12px;
+    background-color: #2e9254;
+    animation-name: circles;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+ animation-timing-function: reverse; 
+
+
+}
+.box-container{
+width: 500px;
+height:500px;
+border: 2px dashed rgb(46, 57, 25);
+border-radius: 50px;
+position: relative;
+display: grid;
+justify-content: center;
+
+grid-template-columns:  105px 105px 105px 105px;
+/* grid-gap: 3px; */
+grid-template-rows: 100px 100px 100px 100px;
+grid-gap: 12px;
+background: linear-gradient(45deg ,rgb(141, 58, 141), rgb(113, 32, 46));
+
+transform: translate(371px, 26px);
+box-shadow: 5px 5px 44px 17px red;
+
+
+
+
+
+
+}
+@keyframes circle  {
+    0%{
+left: 0px;
+top: 0px;
+color: red;
+    }
+    
+     25%{
+        left: 500px;
+                top: 0px;
+                background-color: rgb(91, 40, 145);
+             }
+     50%{
+                        left: 500px;
+                        top: 500px;
+                        color: rgb(44, 135, 120);
+                            }
+     100%{
+                                left: 0px;
+                                top: 500px;
+                                color: rgb(123, 39, 109);
+                                    }
+    
+}
+@keyframes circles {
+    0%{
+left: 0px;
+top: 0px;
+color: red;
+    }
+    
+     25%{
+        left: 0px;
+                top: 500px;
+                background-color: rgb(91, 40, 145);
+             }
+     50%{
+                        left: 500px;
+                        top: 500px;
+                        color: rgb(44, 135, 120);
+                            }
+     100%{
+                                left: 500px;
+                                top: 0px;
+                                color: rgb(123, 39, 109);
+                                    }
+    
+}
+.c1{
+    
+      border: 2px solid rgb(178, 168, 56);
+      border-radius: 37px;
+      transform: translateY(38px);
+      
+           background-color: yellowgreen;
+           box-shadow: 5px -1px 17px 7px plum;
+
+      
+
+}
+.i1{
+    background-size:cover ;
+    border-radius: 37px;
+    height: 100px;
+    width: 105px;
+    transform: rotateY('180deg');
+    
+}
+.c2{
+    
+    background-size: cover;
+    border-radius: 37px;
+    height: 100px;
+    width: 105px;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+ 
+      
+}
+.c1:hover{
+    background-color: grey;
+}
